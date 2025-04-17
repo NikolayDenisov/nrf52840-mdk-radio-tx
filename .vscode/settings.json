@@ -10,7 +10,11 @@
         "nrf_uart.h": "c",
         "nrf_uarte.h": "c",
         "stdio.h": "c",
-        "stdint.h": "c"
+        "stdint.h": "c",
+        "nrf_radio.h": "c",
+        "radio_module.h": "c",
+        "clock.h": "c",
+        "buttons.h": "c"
     },
     "nrf-connect.topdir": "${nrf-connect.sdk:2.6.1}",
     "cortex-debug.variableUseNaturalFormat": true
