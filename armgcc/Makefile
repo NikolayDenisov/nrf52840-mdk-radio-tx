@@ -55,7 +55,7 @@ SRC_FILES += \
   $(SDK_ROOT)/modules/nrfx/mdk/system_nrf52840.c \
   $(PROJ_DIR)/src/button.c \
   $(PROJ_DIR)/src/clock.c \
-  $(PROJ_DIR)/src/radio_module.c \
+  $(PROJ_DIR)/src/radio.c \
 
 # Include folders common to all targets
 INC_FOLDERS += \

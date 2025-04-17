@@ -1,4 +1,4 @@
-#include "radio_module.h"
+#include "radio.h"
 #include "app_error.h"
 #include "bsp.h"
 #include "nrf_log.h"

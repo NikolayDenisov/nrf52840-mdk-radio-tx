@@ -1,6 +1,6 @@
 #include "button.h"
 #include "clock.h"
-#include "radio_module.h"
+#include "radio.h"
 
 #include "app_error.h"
 #include "app_timer.h"
