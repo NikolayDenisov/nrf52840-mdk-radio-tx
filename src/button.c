@@ -4,12 +4,11 @@
 #include "nrf_gpio.h"
 #include <stdbool.h>
 
-#define BUTTON_PIN NRF_GPIO_PIN_MAP(1, 0) // Это и есть P1.00
+#define BUTTON_PIN NRF_GPIO_PIN_MAP(1, 0)
 #define DEBOUNCE_DELAY_MS 50
 
 static volatile bool button_pressed = false;
 
-// Обработчик прерывания
 void gpiote_event_handler(nrf_drv_gpiote_pin_t pin,
                           nrf_gpiote_polarity_t action) {
   nrf_delay_ms(DEBOUNCE_DELAY_MS);
@@ -27,7 +26,6 @@ void button_init(void) {
     APP_ERROR_CHECK(err_code);
   }
 
-  // Настраиваем кнопку на прерывание по спаду (нажатие)
   nrf_drv_gpiote_in_config_t config = GPIOTE_CONFIG_IN_SENSE_HITOLO(true);
   config.pull = NRF_GPIO_PIN_PULLUP;
 

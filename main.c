@@ -26,7 +26,6 @@ int main(void) {
 
   NRF_LOG_INFO("Radio transmitter example started.");
   NRF_LOG_INFO("Press Button");
-  APP_ERROR_CHECK(err_code);
 
   uint32_t packet = 12;
 
